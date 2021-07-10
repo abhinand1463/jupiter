@@ -10,8 +10,8 @@
     <classes>
       <class name="todo.TodoTasks"/>
       </classes> 
+      </test>  
     
-  </test>  
     <test name="Test Single Entry Tasks Firefox">
       <parameter name="browser" value="Firefox"/>
       <parameter name="task" value="Test1"/>

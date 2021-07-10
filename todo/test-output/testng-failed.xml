@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite name="Failed suite [Hands-on]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Single Entry Tasks Chrome(failed)">
+    <parameter name="task" value="Test1"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="footerCount" value="1"/>
+    <parameter name="task1" value="Test1"/>
+    <parameter name="task2" value="Test2"/>
     <classes>
       <class name="todo.TodoTasks">
         <methods>
-          <include name="checkTask"/>
           <include name="loadProperties"/>
-          <include name="createTask"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="createMultipleTask"/>
-          <include name="uncheckTask"/>
+          <include name="createMultipleTask" invocation-numbers="0"/>
           <include name="openUrl"/>
-          <include name="deleteLastTask"/>
-          <include name="editTask"/>
-          <include name="removeTask"/>
+          <include name="removeTask" invocation-numbers="0"/>
         </methods>
       </class> <!-- todo.TodoTasks -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test Single Entry Tasks Chrome(failed) -->
+</suite> <!-- Failed suite [Hands-on] -->

@@ -38,7 +38,6 @@ public class TodoTasks {
 	@Parameters({"browser"})
  	  private void setUp(String browser) {
 	    
-	  
 			if (browser.equals("Chrome")) {
 				
 				WebDriverManager.chromedriver().setup();
@@ -93,11 +92,11 @@ public class TodoTasks {
   	 }
   	 if(footerTextActual.equals(footerTextExpected))
   	 {
-  		 System.out.println("The task has been created and "+footerCount+ " item left' is displayed at the bottom");
+  		 System.out.println("The task has been created and "+footerCount+ " item left is displayed at the bottom");
   	 }
   	 else
   	 {
-  		 System.out.println(footerCount +" item left' is not displayed at the bottom");
+  		 System.out.println(footerCount +" item left is not displayed at the bottom");
   	 }
   	 Assert.assertEquals(footerTextActual,footerTextExpected);
    }
@@ -132,6 +131,7 @@ public class TodoTasks {
 		 {
 			 System.out.println("The task was not edited");
 		 }
+		 Assert.assertEquals(actualText,"Test1Edited");
 	 }
 
   private void clickTask(String task) {
@@ -151,7 +151,7 @@ public class TodoTasks {
 		 {
 			 System.out.println("Task is unchecked");
 			 String footerTextActual = driver.findElement(By.xpath(prop.getProperty("footerText"))).getText();
-			 String footerTextExpected = "1 items left";
+			 String footerTextExpected = "1 item left";
 			 if(footerTextActual.equals(footerTextExpected))
 			 {
 				 System.out.println("The task has been marked as completed and the expected footer text is present");
@@ -159,7 +159,7 @@ public class TodoTasks {
 			 {
 				 System.out.println("'1 item left' text is not present at the bottom");
 			 }
-			 
+			 Assert.assertEquals(footerTextActual,footerTextExpected);
 		}
 	 }
 
@@ -181,7 +181,7 @@ public class TodoTasks {
 			 {
 				 System.out.println("'0 items left' text is not present at the bottom");
 			 }
-			 
+			 Assert.assertEquals(footerTextActual,footerTextExpected);
 		}
 		 		 clearCompletedTask();
 	 }
@@ -198,7 +198,7 @@ public class TodoTasks {
   private void removeTask(String task) throws InterruptedException {
 	     createTask(task,1);
 	  	driver.findElement(By.xpath(prop.getProperty("addedText").replace("%s", task))).click();
-		 Thread.sleep(5000);
+		 Thread.sleep(7000);
 		 driver.findElement(By.xpath(prop.getProperty("removeText"))).click();
 		 Thread.sleep(5000);
 		 
