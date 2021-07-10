@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-07-10T11:39:37 CEST" name="Hands-on" finished-at="2021-07-10T11:40:16 CEST" duration-ms="38746">
+    <groups>
+      <group name="multiple">
+        <method signature="TodoTasks.createMultipleTask(java.lang.String,java.lang.String)[pri:5, instance:todo.TodoTasks@169e6180]" name="createMultipleTask" class="todo.TodoTasks"/>
+        <method signature="TodoTasks.deleteLastTask()[pri:6, instance:todo.TodoTasks@169e6180]" name="deleteLastTask" class="todo.TodoTasks"/>
+      </group> <!-- multiple -->
+    </groups>
+    <test started-at="2021-07-10T11:39:37 CEST" name="Test Single Entry Tasks Chrome" finished-at="2021-07-10T11:40:16 CEST" duration-ms="38746">
+      <class name="todo.TodoTasks">
+        <test-method is-config="true" signature="loadProperties()[pri:0, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:37 CEST" name="loadProperties" finished-at="2021-07-10T11:39:37 CEST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadProperties -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:37 CEST" name="setUp" finished-at="2021-07-10T11:39:39 CEST" duration-ms="2243" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method is-config="true" signature="openUrl()[pri:0, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:39 CEST" name="openUrl" finished-at="2021-07-10T11:39:40 CEST" depends-on-methods="todo.TodoTasks.setUp, todo.TodoTasks.loadProperties" duration-ms="513" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openUrl -->
+        <test-method signature="createTask(java.lang.String,int)[pri:0, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:40 CEST" name="createTask" finished-at="2021-07-10T11:39:40 CEST" duration-ms="673" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTask -->
+        <test-method signature="editTask(java.lang.String)[pri:1, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:40 CEST" name="editTask" finished-at="2021-07-10T11:39:47 CEST" duration-ms="6269" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- editTask -->
+        <test-method signature="uncheckTask(java.lang.String)[pri:2, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:47 CEST" name="uncheckTask" finished-at="2021-07-10T11:39:49 CEST" duration-ms="2136" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- uncheckTask -->
+        <test-method signature="checkTask(java.lang.String)[pri:3, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:49 CEST" name="checkTask" finished-at="2021-07-10T11:39:49 CEST" duration-ms="110" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkTask -->
+        <test-method signature="removeTask(java.lang.String)[pri:4, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:49 CEST" name="removeTask" finished-at="2021-07-10T11:39:59 CEST" duration-ms="10207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeTask -->
+        <test-method signature="createMultipleTask(java.lang.String,java.lang.String)[pri:5, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:39:59 CEST" name="createMultipleTask" finished-at="2021-07-10T11:40:05 CEST" duration-ms="6207" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Test1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createMultipleTask -->
+        <test-method signature="deleteLastTask()[pri:6, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:40:05 CEST" name="deleteLastTask" finished-at="2021-07-10T11:40:11 CEST" duration-ms="6134" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteLastTask -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:todo.TodoTasks@169e6180]" started-at="2021-07-10T11:40:11 CEST" name="tearDown" finished-at="2021-07-10T11:40:16 CEST" duration-ms="4208" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- todo.TodoTasks -->
+    </test> <!-- Test Single Entry Tasks Chrome -->
+  </suite> <!-- Hands-on -->
+</testng-results>

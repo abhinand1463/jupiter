@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Hands-on">
+  <test name="Test Single Entry Tasks Chrome">
+      <parameter name="browser" value="Chrome"/>
+      <parameter name="task" value="Test1"/>
+      <parameter name="task1" value="Test1"/>
+      <parameter name="task2" value="Test2"/>
+      <parameter name="footerCount" value="1"/>
+    <classes>
+      <class name="todo.TodoTasks"/>
+      </classes> 
+    
+  </test>  
+    <test name="Test Single Entry Tasks Firefox">
+      <parameter name="browser" value="Firefox"/>
+      <parameter name="task" value="Test1"/>
+      <parameter name="task1" value="Test1"/>
+      <parameter name="task2" value="Test2"/>
+      <parameter name="footerCount" value="1"/>
+            <classes>
+      <class name="todo.TodoTasks"/>
+      </classes>
+  </test> 
+  </suite>

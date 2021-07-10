@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Hands-on]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test Single Entry Tasks Chrome(failed)">
+    <parameter name="task" value="Test1"/>
+    <parameter name="browser" value="Chrome"/>
+    <parameter name="footerCount" value="1"/>
+    <parameter name="task1" value="Test1"/>
+    <parameter name="task2" value="Test2"/>
+    <classes>
+      <class name="todo.TodoTasks">
+        <methods>
+          <include name="loadProperties"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="createMultipleTask" invocation-numbers="0"/>
+          <include name="openUrl"/>
+          <include name="removeTask" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- todo.TodoTasks -->
+    </classes>
+  </test> <!-- Test Single Entry Tasks Chrome(failed) -->
+</suite> <!-- Failed suite [Hands-on] -->
