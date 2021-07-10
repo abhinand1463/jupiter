@@ -67,15 +67,19 @@ A method named clickTask was created to mark a task as complete.
 For this test case, the uncheckTask method is used to verify if the task returns to its previous state once it has been unchecked. The footer text of "1 item left" is also checked to make sure that it reflects correctly.
 
 **TC4 and TC5**
+
  A separate method called clearCompletedTask was created. In the checkTask method, the complete task functionality and the clear completed link are tested.
 
 **TC6**
+
 The removeTask method is used to delete the task by clicking the 'x' button in the task name.
 
 **TC7**
+
 To test creation of multiple tasks, the createMultipleTask method is used and the xpaths are checked to ensure it is successful. 
 
 **TC8**
+
 For the final test case, the deleteLastTask method is used to delete both the created tasks. 
 
 # Reporting
