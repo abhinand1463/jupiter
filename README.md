@@ -16,9 +16,11 @@ This document contains the instructions to run the automation script written usi
 
 Installation steps via any IDE: 
 
-1. Please import the maven project. The dependencies for Selenium, TestNG and WebDriverManager have been mentioned in the pom.xml file. The input variables have been mentioned in the TestNG.xml and the xpaths have been listed in the config.properties file. 
-2. Compile the project using mvn clean install.
-3. Run testng.xml as a testng suite.
+1. Import the maven project. The dependencies for Selenium, TestNG and WebDriverManager have been mentioned in the pom.xml file. The input variables have been mentioned in the TestNG.xml and the xpaths have been listed in the config.properties file.
+2. Compile the project using mvn clean install in the terminal or build the project using IDE.
+3. From the testng.xml file in IDE, right click -> Run as -> TestNG Suite.
+
+![image](https://user-images.githubusercontent.com/85895792/125171369-832b4e80-e1d1-11eb-8ea7-67b606c38172.png)
 
 # Test Scenarios
 [(Back to top)](#table-of-contents)
